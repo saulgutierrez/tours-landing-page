@@ -1,0 +1,79 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Variables CSS */
+:root {
+    --font: "Nunito Sans", sans-serif;
+    --light-gray: #eee;
+    --black: #08121f;
+    --navy-blue: #284f83;
+    --white: #fff;
+
+    /* Font size para Desktop */
+    --font-size-h1-desktop: 4em;
+    --font-size-h2-desktop: 3em;
+    --font-size-h3-desktop: 1.875em;
+    --font-size-h4-desktop: 1.875em;
+    --font-size-p-desktop: 2em;
+    --font-size-p-md-desktop: 1.625em;
+    --font-size-p-sm-desktop: 1.125em;
+    --font-size-input-desktop: 1em;
+    --font-size-a-desktop: 0.875em;
+
+    /* Font size para Movil */
+    --font-size-h1-mobile: 2em;
+    --font-size-h2-mobile: 2em;
+    --font-size-h3-mobile: 1.5em;
+    --font-size-h4-mobile: 1.5em;
+    --font-size-p-mobile: 1em;
+    --font-size-p-sm-mobile: 0.9em;
+    --font-size-input-mobile: 1em;
+    --font-size-a-mobile: 1.5em;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2, h3, h4, a, button, label {
+    font-weight: 700;
+}
+
+p, input {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* Body */
+
+/* Header */
+
+/* Inicio */
+
+/* Tours */
+
+/* Testimonios */
+
+/* Reserva */

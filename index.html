@@ -1,39 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Estilos CSS -->
-     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <!-- Remixicon -->
-     <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
     <!-- Swiper -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Responsive Tours Landing Page</title>
-
+</head>
+<body>
     <!-- Header -->
-     <header>
-        <a href="#" class="logo"></a>
-     </header>
+    <header>
+		<a href="#" class="logo">
+			<i class="ri-road-map-fill"></i>
+			tours
+    </a>
+    <nav class="nav">
+			<a href="#" class="nav__link">Incio</a>
+			<a href="#tours" class="nav__link">Tours</a>
+			<a href="#testimonios" class="nav__link">Testimonios</a>
+			<a href="#reserva" class="nav__link">Reserva</a>
+			<a href="#newsletter" class="nav__link">Newsletter</a>
+    	</nav>
+		<button class="menu">
+			<i class="ri-menu-3-line"></i>
+		</button>
+    </header>
 
     <!-- Inicio -->
-
+    <section class="inicio">
+      <div class="swiper inicio__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/1.jpg" alt="Edimburgo">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/2.jpg" alt="Edimburgo">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/3.jpg" alt="Edimburgo">
+          </div>
+        </div>
+        <div class="container__texto">
+          <h1>Descubre la magia de Edimburgo en cada paso</h1>
+          <p>Explora sus castillos, leyendas y sabores en un recorrido inolvidable</p>
+          <a href="#" class="btn">Reserva ahora</a>
+        </div>
+      </div>
+    </section>
     <!-- Tours -->
+    <section class="tours" id="tours">
+      <h2 class="titulo"><span>Elige el tour</span> que quieras</h2>
+      <div class="tours__cards">
+        <article class="cards__card">
+          <img class="card__image" src="assets/images/4.jpg" alt="Casco Antiguo">
+          <div class="card__texto">
+            <h3>Casco Antiguo</h3>
+            <p>Explora las calles empedradas y visita lugares emblemáticos</p>
+            <a href="#" class="btn card__btn">Ver más</a>
+          </div>
+        </article>
+        <article class="cards__card">
+          <img class="card__image" src="assets/images/5.jpg" alt="Fantasmmas y Leyendas">
+          <div class="card__texto">
+            <h3>Fantasmmas y Leyendas</h3>
+            <p>Escalofriantes relatos históricos de fantasmas y eventos inquietantes</p>
+            <a href="#" class="btn card__btn">Ver más</a>
+          </div>
+        </article>
+        <article class="cards__card">
+          <img class="card__image" src="assets/images/6.jpg" alt="Arte y Cultura">
+          <div class="card__texto">
+            <h3>Arte y Cultura</h3>
+            <p>Visita las galerías y musesos más destacados de Edimburgo</p>
+            <a href="#" class="btn card__btn">Ver más</a>
+          </div>
+        </article>
+        <article class="cards__card">
+          <img class="card__image" src="assets/images/7.jpg" alt="Gastronomia">
+          <div class="card__texto">
+            <h3>Gastronomía</h3>
+            <p>Degustación de platos tradicionales en varios restaurantes y mercados locales</p>
+            <a href="#" class="btn card__btn">Ver más</a>
+          </div>
+        </article>
+        <article class="cards__card">
+          <img class="card__image" src="assets/images/8.jpg" alt="Highlands">
+          <div class="card__texto">
+            <h3>Highlands</h3>
+            <p>Escapada de la ciudad y adéntrate en las impresionantes Highlands escocesas</p>
+            <a href="#" class="btn card__btn">Ver más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios" id="testimonios">
+      <h2 class="titulo">¿Qué dicen <span> nuestros clientes? </span></h2>
+      <div class="swiper testimonios__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide__img-box">
+              <img src="assets/images/9.jpg" alt="Testimonio">
+            </div>
+            <div class="slide__descripcion">
+              <p>Patrick Cheng</p>
+              <h4>Tour Highlands</h4>
+              <p>Un tour impresionante por paisajes que parecen sacados de una postal. Aprendí mucho sobre la historia  de Escocia mientras disfrutaba de vistas espectaculares</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide__img-box">
+              <img src="assets/images/10.jpg" alt="Testimonio">
+            </div>
+            <div class="slide__descripcion">
+              <p>Samantha Kirby</p>
+              <h4>Tour Arte y Cultura</h4>
+              <p>El tour de arte y cultura de Edimburgo me llevó a descubrir la esencia creativa de la ciudad. Desde galerías escondidas hasta monumentos históricos, cada parada fue una joya</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide__img-box">
+              <img src="assets/images/11.jpg" alt="Testimonio">
+            </div>
+            <div class="slide__descripcion">
+              <p>Trevor Reznick</p>
+              <h4>Tour Gastronomía</h4>
+              <p>El tour de Gastronomía fue un viaje inolvidable para el paladar. Probamos desde platos tradicionales hasta delicias contemporáneas, todo mientraas conocíamos la rica historia culinaria de Edimburgo</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="buttons">
+          <div class="swiper-button button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+          <div class="swiper-button button-next">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Reserva -->
+     <section class="reserva" id="reserva">
+      <h2 class="titulo">
+        <span>Reserva tu aventura</span> en Edimburgo hoy y vive una experiencia inolvidable
+      </h2>
+      <article class="reserva__container-form">
+        <form action="" class="container-form__form" autocomplete="off">
+          <div class="form__input-box">
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" placeholder="Jane Doe">
+          </div>
+          <div class="form__input-box">
+            <label for="correo">Tu correo electrónico</label>
+            <input type="email" id="correo" placeholder="ejemplo@email.com">
+          </div>
+          <div class="form__input-box">
+            <label for="tour">Selecciona el tour</label>
+            <select id="tour">
+              <option value="Casco Antiguo">Casco Antiguo</option>
+              <option value="Fantasmmas y Leyendas">Fantasmmas y Leyendas</option>
+              <option value="Gastronomía">Gastronomía</option>
+              <option value="Arte y Cultura">Arte y Cultura</option>
+              <option value="Highlands">Highlands</option>
+            </select>
+          </div>
+          <div class="form__input-box input-box--two-cols">
+            <div>
+              <label for="fecha">Fecha del Tour</label>
+              <input type="date" id="fecha" placeholder="dd/mm/aaaa">
+            </div>
+            <div>
+              <label for="numero">Número de personas</label>
+              <input type="number" id="numero" placeholder="0" min="1">
+            </div>
+          </div>
+          <button type="submit" class="btn form__btn">Reserva ahora</button>
+        </form>
+      </article>
+     </section>
 
     <!-- Newsletter -->
-
+     <section class="newsletter" id="newsletter">
+      <h2>Suscribete a nuestro boletín y recibe ofertas exclusivas y guías de viaje para descrubrir lo mejor de Edimburgo</h2>
+      <form action="" autocomplete="off">
+        <input type="email" placeholder="ejemplo@email.com">
+        <button class="btn" type="submit">Suscribete</button>
+      </form>
+     </section>
     <!-- Footer -->
+     <footer>
+      <a href="#" class="logo">
+        <i class="ri-road-map-fill"></i>
+        tours
+      </a>
+      <div class="enlaces">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="rrss">
+        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-whatsapp-fill"></i></a>
+      </div>
+     </footer>
 
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!-- index.js -->
-     <script src="index.js"></script>
-</head>
-<body>
-    
+    <script src="index.js"></script>
 </body>
 </html>
